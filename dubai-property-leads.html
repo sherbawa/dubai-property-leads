@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dubai Property Buyer’s Guide</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f7fa;
+      padding: 40px 30px;
+      max-width: 500px;
+      margin: 40px auto;
+      border-radius: 8px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.1);
+      background: white;
+      min-height: 700px;
+    }
+    h1 {
+      color: #004080;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    p.subtitle {
+      text-align: center;
+      font-size: 1.1em;
+      color: #333;
+      margin-bottom: 30px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    label {
+      margin-top: 15px;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+    input, select, button {
+      padding: 12px;
+      margin-top: 8px;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      margin-top: 30px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <h1>Find Your Dream Property in Dubai!</h1>
+  <p class="subtitle">Get your FREE Dubai Property Buyer’s Guide with latest prices, best deals, and expert tips.</p>
+
+  <form action="https://formspree.io/f/mpwrepvv" method="POST">
+    <label for="fullName">Full Name</label>
+    <input type="text" id="fullName" name="fullName" placeholder="Your full name" required />
+
+    <label for="phone">Phone Number</label>
+    <input type="tel" id="phone" name="phone" placeholder="+971 50 123 4567" required />
+
+    <label for="email">Email Address</label>
+    <input type="email" id="email" name="email" placeholder="you@example.com" required />
+
+    <label for="budget">Budget Range</label>
+    <select id="budget" name="budget" required>
+      <option value="" disabled selected>Select your budget</option>
+      <option value="under-1m">Under AED 1,000,000</option>
+      <option value="1m-3m">AED 1,000,000 – 3,000,000</option>
+      <option value="3m-5m">AED 3,000,000 – 5,000,000</option>
+      <option value="above-5m">Above AED 5,000,000</option>
+    </select>
+
+    <label for="propertyType">Property Type</label>
+    <select id="propertyType" name="propertyType" required>
+      <option value="" disabled selected>Select property type</option>
+      <option value="apartment">Apartment</option>
+      <option value="villa">Villa</option>
+      <option value="townhouse">Townhouse</option>
+      <option value="others">Others</option>
+    </select>
+
+    <button type="submit">Get My Free Guide</button>
+  </form>
+</body>
+</html>
